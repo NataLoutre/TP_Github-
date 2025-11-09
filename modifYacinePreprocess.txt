@@ -1,0 +1,1 @@
+j'ai ajouter une ligne pour supprimer la colonne id de la dataframe
