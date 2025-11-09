@@ -1,5 +1,5 @@
 import pandas as pd 
-from sklearn import svm  
+from sklearn.tree import DecisionTreeClassifier  
 from train_model import train_model
 from preprocess_data import preprocess_data
 
@@ -18,7 +18,7 @@ test_X= test[['SepalLengthCm','SepalWidthCm','PetalLengthCm','PetalWidthCm']]
 test_y =test.Species   
 
 
-model = svm.SVC()
+model = DecisionTreeClassifier() 
 prediction = train_model(train_X, train_y, test_X, model)
 
 
