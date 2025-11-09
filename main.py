@@ -1,5 +1,5 @@
 import pandas as pd 
-from sklearn.linear_model import LinearRegression
+from sklearn.linear_model import LinearRegression 
 from train_model import train_model
 from preprocess_data import preprocess_data
 
