@@ -1,0 +1,3 @@
+Le paramètre name permet d'obtenir le nom de la classe du modèle.
+Il est passé mais immédiatement écrasé par la ligne name = model.__class__.__name__.
+La valeur fournie par l'appelant est donc ignorée.
