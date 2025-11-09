@@ -1,5 +1,5 @@
 import pandas as pd 
-from sklearn.linear_model import LinearRegression
+from sklearn import svm  
 from train_model import train_model
 from preprocess_data import preprocess_data
 
@@ -18,6 +18,6 @@ test_X= test[['SepalLengthCm','SepalWidthCm','PetalLengthCm','PetalWidthCm']]
 test_y =test.Species   
 
 
-model = LinearRegression()
+model = svm.SVC()
 prediction = train_model(train_X, train_y, test_X, model)
 
